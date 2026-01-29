@@ -1,0 +1,1104 @@
+/* vida_universitaria.css - Estilos específicos para la sección Vida Universitaria */
+
+/* Variables de colores específicas */
+:root {
+    --color-universidad: #1e90ff;
+    --color-universidad-light: #e6f2ff;
+    --color-universidad-dark: #0056b3;
+    --gradient-universidad: linear-gradient(135deg, #1e90ff 0%, #4169e1 100%);
+    --gradient-universidad-light: linear-gradient(135deg, #e6f2ff 0%, #d4e6ff 100%);
+    --page-bg-universidad: #f5f9ff;
+    --color-desafio: #ff6b6b;
+    --color-inspiracion: #4ecdc4;
+    --color-aprendizaje: #45b7d1;
+    --color-liderazgo: #ff9a3c;
+    --color-comunicacion: #1e90ff;
+    --color-gestion: #06d6a0;
+    --color-equipo: #9b59b6;
+}
+
+/* RESET Y ESTILOS BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f9ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+.vida-universitaria-container {
+    padding: 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #f5f9ff;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* =========================================== */
+/* HERO SECTION */
+/* =========================================== */
+.vida-universitaria-hero {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(30, 144, 255, 0.9), rgba(65, 105, 225, 0.9)),
+                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.hero-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 24px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-item i {
+    font-size: 20px;
+}
+
+/* =========================================== */
+/* SECTION HEADER COMÚN */
+/* =========================================== */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.header-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-universidad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: white;
+    font-size: 36px;
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.3);
+}
+
+.section-header h2 {
+    font-size: 42px;
+    color: var(--color-universidad-dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* =========================================== */
+/* SECCIÓN INICIO - TIMELINE MÁS PEQUEÑA */
+/* =========================================== */
+.section-inicio {
+    padding: 80px 40px;
+    background: white;
+    width: 100%;
+}
+
+.inicio-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.lead-paragraph strong {
+    color: var(--color-universidad-dark);
+    font-weight: 600;
+}
+
+/* TIMELINE REDISEÑADA - MÁS PEQUEÑA Y MEJOR ESPACIADA */
+.timeline-experience {
+    background: var(--gradient-universidad-light);
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 4px solid var(--color-universidad);
+    width: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(30, 144, 255, 0.2);
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* TIMELINE YEAR - MÁS PEQUEÑO Y MEJOR ALINEADO */
+.timeline-year {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-universidad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
+.timeline-content {
+    flex: 1;
+    padding-top: 5px;
+}
+
+.timeline-content h3 {
+    color: var(--color-universidad-dark);
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 0;
+}
+
+.inicio-image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    height: 380px;
+    width: 100%;
+}
+
+.inicio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(30, 144, 255, 0.9));
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.image-caption i {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.image-caption p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* =========================================== */
+/* SECCIÓN TRABAJOS GRUPALES */
+/* =========================================== */
+.section-trabajos {
+    padding: 80px 40px;
+    background: var(--page-bg-universidad);
+    width: 100%;
+}
+
+.trabajos-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.experiencia-card,
+.lecciones-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(30, 144, 255, 0.1);
+    width: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--gradient-universidad-light);
+}
+
+.card-header h3 {
+    font-size: 24px;
+    color: var(--color-universidad-dark);
+    margin: 0;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-universidad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.experiencia-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--gradient-universidad-light);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.experiencia-item:hover {
+    transform: translateY(-5px);
+}
+
+.experiencia-item.positiva {
+    border-left: 5px solid #4CAF50;
+}
+
+.experiencia-item.negativa {
+    border-left: 5px solid #FF9800;
+}
+
+.experiencia-item.aprendizaje {
+    border-left: 5px solid #2196F3;
+}
+
+.item-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.positiva .item-icon {
+    color: #4CAF50;
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.negativa .item-icon {
+    color: #FF9800;
+    background: rgba(255, 152, 0, 0.1);
+}
+
+.aprendizaje .item-icon {
+    color: #2196F3;
+    background: rgba(33, 150, 243, 0.1);
+}
+
+.item-content h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.item-content p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.lecciones-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.lecciones-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.lecciones-list li:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.lecciones-list li i {
+    color: var(--color-universidad);
+    font-size: 18px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.lecciones-list li span {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================== */
+/* SECCIÓN CRECIMIENTO ACADÉMICO - REORGANIZADA */
+/* =========================================== */
+.section-crecimiento {
+    padding: 80px 40px;
+    background: white;
+    width: 100%;
+}
+
+.crecimiento-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* CONTENEDOR DE CURSOS (ARRIBA) */
+.cursos-desafiantes-container,
+.cursos-inspiradores-container {
+    width: 100%;
+}
+
+.cursos-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(30, 144, 255, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.desafiantes-card .card-header {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+    border-radius: 12px 12px 0 0;
+    margin: -25px -25px 25px -25px;
+    padding: 20px 25px;
+    color: white;
+}
+
+.desafiantes-card .card-header h3 {
+    color: white;
+}
+
+.desafiantes-card .card-icon {
+    background: white;
+    color: #ff6b6b;
+}
+
+.inspiradores-card .card-header {
+    background: linear-gradient(135deg, #4ecdc4 0%, #6ae3db 100%);
+    border-radius: 12px 12px 0 0;
+    margin: -25px -25px 25px -25px;
+    padding: 20px 25px;
+    color: white;
+}
+
+.inspiradores-card .card-header h3 {
+    color: white;
+}
+
+.inspiradores-card .card-icon {
+    background: white;
+    color: #4ecdc4;
+}
+
+.cursos-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    width: 100%;
+}
+
+.cursos-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.curso-item {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-desafio);
+}
+
+.inspiradores-card .curso-item {
+    border-left-color: var(--color-inspiracion);
+}
+
+.curso-item h4 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.curso-item p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 0;
+}
+
+.cursos-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.cursos-imagen img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    font-size: 13px;
+    padding: 5px 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.imagen-caption p {
+    margin: 0;
+}
+
+/* DOCENTES INSPIRADORES */
+.docentes-wrapper {
+    width: 100%;
+}
+
+.docentes-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(30, 144, 255, 0.1);
+    width: 100%;
+}
+
+.docentes-card .card-header {
+    background: linear-gradient(135deg, #45b7d1 0%, #6bc9e0 100%);
+    border-radius: 12px 12px 0 0;
+    margin: -25px -25px 25px -25px;
+    padding: 20px 25px;
+    color: white;
+}
+
+.docentes-card .card-header h3 {
+    color: white;
+}
+
+.docentes-card .card-icon {
+    background: white;
+    color: #45b7d1;
+}
+
+.docentes-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+}
+
+.docentes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.docente-item {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.docente-item:hover {
+    transform: translateY(-5px);
+    background: var(--gradient-universidad-light);
+}
+
+.docente-avatar {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-universidad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.docente-item h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.docente-item p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.docentes-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.docentes-imagen img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================== */
+/* SECCIÓN DESARROLLO PERSONAL */
+/* =========================================== */
+.section-desarrollo {
+    padding: 80px 40px;
+    background: var(--page-bg-universidad);
+    width: 100%;
+}
+
+.desarrollo-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.habilidades-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(30, 144, 255, 0.1);
+    width: 100%;
+}
+
+.habilidades-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.habilidad-item {
+    text-align: center;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.habilidad-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.habilidad-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.liderazgo {
+    background: linear-gradient(135deg, #ff9a3c 0%, #ffc93c 100%);
+}
+
+.comunicacion {
+    background: linear-gradient(135deg, #1e90ff 0%, #4169e1 100%);
+}
+
+.gestion {
+    background: linear-gradient(135deg, #06d6a0 0%, #0cb48a 100%);
+}
+
+.equipo {
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+}
+
+.habilidad-item h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.habilidad-item p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Imágenes para habilidades */
+.imagenes-habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.imagen-habilidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-habilidad img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.aprendizajes-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(30, 144, 255, 0.1);
+    width: 100%;
+}
+
+.aprendizajes-list {
+    padding: 0;
+    width: 100%;
+}
+
+.aprendizaje-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.aprendizaje-item:hover {
+    background: var(--gradient-universidad-light);
+    transform: translateX(5px);
+}
+
+.numero {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-universidad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.contenido h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.contenido p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* =========================================== */
+/* BOTÓN VOLVER */
+/* =========================================== */
+.vida-universitaria-actions {
+    text-align: center;
+    padding: 40px 0 60px;
+    background: var(--page-bg-universidad);
+    width: 100%;
+}
+
+.btn-volver-vida-universitaria {
+    background: var(--gradient-universidad);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.3);
+}
+
+.btn-volver-vida-universitaria:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(30, 144, 255, 0.4);
+    background: linear-gradient(135deg, #1c86ee 0%, #3a5fcd 100%);
+}
+
+.btn-volver-vida-universitaria:active {
+    transform: translateY(-1px);
+}
+
+.btn-volver-vida-universitaria i {
+    transition: transform 0.3s ease;
+}
+
+.btn-volver-vida-universitaria:hover i {
+    transform: translateX(-5px);
+}
+
+/* =========================================== */
+/* RESPONSIVE DESIGN */
+/* =========================================== */
+@media (max-width: 1200px) {
+    .inicio-content,
+    .trabajos-content,
+    .desarrollo-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .crecimiento-grid {
+        gap: 30px;
+    }
+
+    .cursos-content,
+    .docentes-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .docentes-imagen img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .header-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    .inicio-image {
+        height: 350px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .timeline-year {
+        margin: 0 auto;
+    }
+
+    .habilidades-grid,
+    .docentes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagenes-habilidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section-inicio,
+    .section-trabajos,
+    .section-crecimiento,
+    .section-desarrollo {
+        padding: 60px 20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-info {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .info-item {
+        padding: 10px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .lead-paragraph {
+        font-size: 16px;
+    }
+
+    .inicio-image {
+        height: 300px;
+    }
+
+    .timeline-year {
+        width: 55px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 15px;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+    }
+
+    .habilidades-grid,
+    .docentes-grid,
+    .imagenes-habilidades {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cursos-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .curso-item {
+        text-align: center;
+    }
+
+    .card-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .experiencia-item,
+    .aprendizaje-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .experiencia-item .item-icon {
+        margin: 0 auto 15px;
+    }
+
+    .aprendizaje-item .numero {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .vida-universitaria-hero {
+        padding: 40px 15px;
+        min-height: 350px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .inicio-image {
+        height: 250px;
+    }
+
+    .cursos-imagen img,
+    .docentes-imagen img,
+    .imagen-habilidad img {
+        height: 150px;
+    }
+
+    .btn-volver-vida-universitaria {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
