@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (contentType === 'curiosidades') {
             contentFile = 'pages/curiosidades.html';
         } else if (contentType === 'vida-universitaria') {
-            contentFile = 'pages/vida_universitaria.html';
+            contentFile = 'pages/vida-universitaria.html';
         } else if (contentType === 'metas') {
             contentFile = 'pages/metas.html';
         }
