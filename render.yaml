@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: portafolio-personal
+    env: static
+    buildCommand: ""
+    startCommand: ""
+    staticPublishPath: ./
+    headers:
+      - path: /*.css
+        name: Content-Type
+        value: text/css
+      - path: /*.js
+        name: Content-Type
+        value: application/javascript
+      - path: /*.html
+        name: Content-Type
+        value: text/html
+      - path: /*.png
+        name: Content-Type
+        value: image/png
+      - path: /*.jpg
+        name: Content-Type
+        value: image/jpeg
+      - path: /*.jpeg
+        name: Content-Type
+        value: image/jpeg
+      - path: /*.svg
+        name: Content-Type
+        value: image/svg+xml
+      - path: /*
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
