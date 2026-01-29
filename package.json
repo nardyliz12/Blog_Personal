@@ -1,0 +1,12 @@
+{
+  "name": "portafolio-personal",
+  "version": "1.0.0",
+  "description": "Portafolio personal",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Servicio estático - Render se encarga del servidor'"
+  },
+  "keywords": ["portafolio", "personal"],
+  "author": "Nardy Condori",
+  "license": "MIT"
+}
