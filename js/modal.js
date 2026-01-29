@@ -30,15 +30,15 @@ document.addEventListener('DOMContentLoaded', function() {
         let contentFile = '';
 
         if (contentType === 'sobre-mi') {
-            contentFile = 'sobre-mi.html';
+            contentFile = 'pages/sobre-mi.html';
         } else if (contentType === 'proyectos') {
-            contentFile = 'proyectos.html';
+            contentFile = 'pages/proyectos.html';
         } else if (contentType === 'curiosidades') {
-            contentFile = 'curiosidades.html';
+            contentFile = 'pages/curiosidades.html';
         } else if (contentType === 'vida-universitaria') {
-            contentFile = 'vida_universitaria.html';
+            contentFile = 'pages/vida_universitaria.html';
         } else if (contentType === 'metas') {
-            contentFile = 'metas.html';
+            contentFile = 'pages/metas.html';
         }
 
         // Cargar contenido del archivo
