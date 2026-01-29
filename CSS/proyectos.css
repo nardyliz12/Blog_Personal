@@ -1,0 +1,517 @@
+/* proyectos.css - Estilos específicos para la sección Proyectos */
+
+/* Variables de colores */
+:root {
+    --color-primary: #1e90ff;
+    --color-secondary: #4169e1;
+    --color-accent: #667eea;
+    --color-purple: #764ba2;
+    --color-dark: #2c3e50;
+    --color-light: #f8f9fa;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-border: #e1e8ed;
+    --gradient-blue: linear-gradient(135deg, #1e90ff 0%, #4169e1 100%);
+    --gradient-purple: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-tech: linear-gradient(135deg, #00d4ff 0%, #667eea 100%);
+    --page-bg: #f0f4f8;
+}
+
+/* Contenedor principal */
+.proyectos-container {
+    padding: 30px;
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: var(--page-bg);
+    min-height: 100vh;
+}
+
+/* =========================================== */
+/* SECCIÓN INTRODUCTORIA CON IMAGEN */
+/* =========================================== */
+.proyectos-intro {
+    margin-bottom: 60px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(30, 144, 255, 0.1);
+}
+
+.intro-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.intro-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-blue);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.3);
+}
+
+.intro-header h1 {
+    font-size: 42px;
+    color: var(--color-dark);
+    margin: 0;
+    font-weight: 700;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Contenido con imagen */
+.intro-content-con-imagen {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-text);
+    text-align: justify;
+    margin: 0;
+}
+
+.intro-image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    height: 300px;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-overlay-text p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Estilos comunes para encabezados de sección */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.section-number {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.3);
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--color-dark);
+    margin: 0;
+    font-weight: 700;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* =========================================== */
+/* PROYECTOS CON ESTILO UNIFORME (Sección 1 y 2 iguales) */
+/* =========================================== */
+.proyectos-destacados,
+.otros-proyectos {
+    margin-bottom: 80px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(30, 144, 255, 0.1);
+}
+
+.proyectos-grid-uniforme {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Tarjeta de proyecto uniforme */
+.proyecto-card-uniforme {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-card-uniforme:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-primary);
+}
+
+/* Imagen de la tarjeta uniforme */
+.card-image-uniforme {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-image-uniforme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.proyecto-card-uniforme:hover .card-image-uniforme img {
+    transform: scale(1.1);
+}
+
+.image-overlay-uniforme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+/* Badge de la tarjeta */
+.card-badge-uniforme {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.card-badge-uniforme i {
+    color: var(--color-primary);
+    font-size: 18px;
+}
+
+.card-badge-uniforme span {
+    font-weight: 600;
+    color: var(--color-dark);
+    font-size: 13px;
+}
+
+/* Contenido de la tarjeta uniforme */
+.card-content-uniforme {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content-uniforme h3,
+.card-content-uniforme h4 {
+    font-size: 20px;
+    color: var(--color-dark);
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.card-content-uniforme p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text);
+    text-align: justify;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Tags de tecnologías */
+.proyecto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tag {
+    background: var(--gradient-blue);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(30, 144, 255, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.3);
+}
+
+/* =========================================== */
+/* BOTÓN VOLVER */
+/* =========================================== */
+.proyectos-actions {
+    text-align: center;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+.btn-volver-proyectos {
+    background: var(--gradient-blue);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.3);
+}
+
+.btn-volver-proyectos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(30, 144, 255, 0.4);
+    background: var(--gradient-purple);
+}
+
+.btn-volver-proyectos:active {
+    transform: translateY(-1px);
+}
+
+.btn-volver-proyectos i {
+    transition: transform 0.3s ease;
+}
+
+.btn-volver-proyectos:hover i {
+    transform: translateX(-5px);
+}
+
+/* =========================================== */
+/* RESPONSIVE DESIGN */
+/* =========================================== */
+@media (max-width: 1200px) {
+    .proyectos-container {
+        padding: 25px;
+    }
+
+    .proyectos-intro,
+    .proyectos-destacados,
+    .otros-proyectos {
+        padding: 30px;
+    }
+
+    .intro-header h1 {
+        font-size: 36px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .intro-content-con-imagen {
+        gap: 40px;
+    }
+
+    .proyectos-grid-uniforme {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro-content-con-imagen {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .intro-image {
+        height: 250px;
+        order: -1;
+    }
+
+    .proyectos-grid-uniforme {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    .card-content-uniforme h3,
+    .card-content-uniforme h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .proyectos-container {
+        padding: 15px;
+    }
+
+    .proyectos-intro,
+    .proyectos-destacados,
+    .otros-proyectos {
+        padding: 20px;
+    }
+
+    .intro-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .intro-header h1 {
+        font-size: 32px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .section-number {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .proyectos-grid-uniforme {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+    }
+
+    .card-content-uniforme p {
+        font-size: 14px;
+    }
+
+    .card-image-uniforme {
+        height: 200px;
+    }
+
+    .btn-volver-proyectos {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .proyectos-container {
+        padding: 10px;
+    }
+
+    .proyectos-intro,
+    .proyectos-destacados,
+    .otros-proyectos {
+        padding: 15px;
+    }
+
+    .intro-header h1 {
+        font-size: 28px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .intro-image {
+        height: 200px;
+    }
+
+    .card-content-uniforme {
+        padding: 20px;
+    }
+
+    .card-content-uniforme h3,
+    .card-content-uniforme h4 {
+        font-size: 16px;
+    }
+
+    .card-badge-uniforme {
+        top: 15px;
+        left: 15px;
+        padding: 6px 12px;
+    }
+
+    .card-badge-uniforme i {
+        font-size: 16px;
+    }
+
+    .card-badge-uniforme span {
+        font-size: 12px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .btn-volver-proyectos {
+        width: 100%;
+        justify-content: center;
+    }
+}
