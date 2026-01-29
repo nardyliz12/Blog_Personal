@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC - Portfolio Personal</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="sobre_mi.css">
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="stylesheet" href="curiosidades.css">
+    <link rel="stylesheet" href="vida_universitaria.css">
+    <link rel="stylesheet" href="metas.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Modal overlay para contenido dinámico -->
+    <div id="sobre-mi-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="sobre-mi-content">
+                <!-- El contenido de sobre-mi.html, proyectos.html o curiosidades.html se cargará aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-section">
+            <a href="#" class="logo-link">
+                <div class="logo">NC</div>
+                <div class="tagline">Aprendiendo, creando y compartiendo</div>
+            </a>
+        </div>
+        <nav>
+            <button id="sobre-mi-btn">Sobre mí</button>
+            <button id="proyectos-btn">Proyectos</button>
+            <button id="curiosidades-btn">Curiosidades</button>
+            <button id="vida-universitaria-btn">Vida Universitaria</button>
+            <button>Mis Metas</button>
+        </nav>
+    </header>
+
+    <!-- Carousel Banner -->
+    <div class="carousel-wrapper">
+        <div class="carousel">
+            <button class="carousel-btn prev-btn">‹</button>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item active">Apasionada por el desarrollo de software y la inteligencia artificial.</div>
+                    <div class="carousel-item">Fanática de los retos, el deporte y los videojuegos.</div>
+                    <div class="carousel-item">Explorando nuevas tecnologías y compartiendo conocimiento.</div>
+                    <div class="carousel-item">Construyendo el futuro una línea de código a la vez.</div>
+                </div>
+            </div>
+            <button class="carousel-btn next-btn">›</button>
+        </div>
+    </div>
+
+    <!-- Hero Section con IMAGEN REAL -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="profile-image">
+                <img src="imagenes/Captura de pantalla 2025-12-27 204904.png"
+                     alt="Nardy Condori - Estudiante de Ingeniería Informática"
+                     class="profile-photo">
+            </div>
+        </div>
+        <div class="hero-right">
+            <h1>Estudiante apasionado por la tecnología</h1>
+            <p>Soy Nardy Condori, estudiante de Ingeniería Informática en Cayetano. Este es un espacio para que todos puedan conocerme y así podamos compartir proyectos y aprendizajes.</p>
+            <button class="btn-primary" id="hero-conoceme-btn">Conóceme más</button>
+        </div>
+    </section>
+
+    <!-- Three Columns -->
+    <section class="three-columns">
+        <div class="column column-blue">
+            <h2>Explora Mi Mundo</h2>
+            <p>De estudiante a creador: tecnología con propósito</p>
+            <form class="email-form">
+                <input type="email" placeholder="Email *" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="column column-dark">
+            <h2>Proyectos destacados</h2>
+            <p>Acompáñame a través de los proyectos más importantes realizados durante mis estudios hasta el momento desde los más sencillos y complejos.</p>
+            <button class="btn-primary" id="proyectos-column-btn">Conóceme más</button>
+        </div>
+        <div class="column column-purple">
+            <h2>Lo que no siempre cuento sobre mi</h2>
+            <p>Al igual que la mayoria de la gente tengo ciertas curiosidades que los demás no saben sobre mi o quiza muy pocos.</p>
+            <button class="btn-primary" id="curiosidades-column-btn">Conóceme más</button>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="education-title">Mi Educación Universitaria</div>
+        <div class="education-content">
+            <div class="education-card">
+                <div class="card-image beca-logo">
+                    <div class="beca-circle">Beca 18</div>
+                </div>
+                <div class="card-text education-text">
+                    <p>En el Perú existen becas dirigidas a estudiantes en situación de vulnerabilidad que mantienen un buen desempeño académico. Al cumplir con estos requisitos, participé en el proceso de postulación, resulté beneficiado con la beca y así pude iniciar mis estudios. Esta oportunidad ha sido fundamental para quienes, como yo, soñamos con acceder a una carrera profesional en una universidad de calidad y buen renombre.</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="card-image university-image">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs5R8qDYP65VPUeVmkJ1FE_3kJ2RCtqhI9ODlTsQmfVEJ_aKPQ5siETDPMj_40JZrkWjh2kdlHhIXC_w20XDFzJkefR3KEuGy4Rrlc-AmK81T-wdOljaBASSukOOhtYJahvDbgBSfFesxr/w851-c-h444/203044-upch-es-universidad-peruana-mejor-posicionada-ranking-times-higher-education.jpg" alt="Universidad Cayetano Heredia">
+                </div>
+                <div class="card-text university-text">
+                    <p>Gracias a beca 18, en 2022 inicié mis estudios en la Universidad Peruana Cayetano Heredia (UPCH), una reconocida institución privada en Lima, fundada en 1961. Es considerada una de las universidades más prestigiosas del país, con un modelo educativo moderno y de alta calidad. Estudiar en la UPCH ha sido una gran oportunidad que me motiva a seguir esforzándome para alcanzar mis metas profesionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links-section">
+        <div class="quick-links-title">
+            Acompañame en este viaje de crecimiento
+        </div>
+        <div class="quick-links-subtitle">
+            En las siguientes Redes Sociales
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/nardyliz12" class="social-icon" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1CKJ7mjzFv/" class="social-icon" title="Facebook" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/liznarely1204?igsh=MXJmb2RleHpmNDQ5dA==" class="social-icon" title="Instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://tiktok.com/@hobibtszil" class="social-icon" title="TikTok" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Lado izquierdo: Formulario y blog -->
+            <div class="footer-left">
+                <h2>Explora mi mundo creativo y acompañame en este viaje</h2>
+                <div class="blog-info">
+                    <div class="blog-header">
+                        <div class="blog-logo">NC</div>
+                        <div class="blog-title">
+                            Blog Personal de Nardy Condori
+                        </div>
+                    </div>
+                    <form class="blog-form">
+                        <div class="form-group">
+                            <label><strong>Email *</strong></label>
+                            <input type="email" placeholder="Email *" required>
+                        </div>
+                        <button type="submit" class="form-button">
+                            <strong>Enviar</strong>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Lado derecho: Enlaces en dos columnas -->
+            <div class="footer-right">
+                <div class="links-column">
+                    <ul class="links-list">
+                        <li><strong>Inicio</strong></li>
+                        <li class="sobre-mi-link">Sobre mí</li>
+                        <li class="proyectos-link">Proyectos</li>
+                        <li class="vida-universitaria-link">Vida Universitaria</li>
+                        <li class="curiosidades-link">Curiosidades</li>
+                        <li>Mis Metas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            © 2025 Desarrollado por Nardy Condori
+        </div>
+    </footer>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://github.com/nardyliz12" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="http://tiktok.com/@hobibtszil" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/share/1CKJ7mjzFv/" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/liznarely1204?igsh=MXJmb2RleHpmNDQ5dA==" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <script src="carrusel.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
