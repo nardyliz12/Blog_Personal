@@ -4,7 +4,7 @@
   "description": "Portafolio personal",
   "main": "index.html",
   "scripts": {
-    "start": "echo 'Servicio estático - Render se encarga del servidor'"
+    "start": "echo 'Servicio estático'"
   },
   "keywords": ["portafolio", "personal"],
   "author": "Nardy Condori",
