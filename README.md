@@ -38,7 +38,6 @@ El objetivo de este sitio es documentar mi proceso de aprendizaje, mostrar mis h
   Hecho con dedicación y aprendizaje constante 🚀
 </p>
 
+---
 
-<p align="center">
 ✨ *Visita mi portafolio en vivo: [portafolio-personal-wa0u.onrender.com](https://portafolio-personal-wa0u.onrender.com/)*
-</p>
