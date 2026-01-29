@@ -1,4 +1,4 @@
-<h1 align="center">Portafolio Personal</h1>
+<h1 align="center"> Mi Portafolio Personal</h1>
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60" height="60"/>
@@ -20,6 +20,7 @@ El objetivo de este sitio es documentar mi proceso de aprendizaje, mostrar mis h
 
 - Sobre mí
 - Proyectos
+- Curiosidades
 - Metas Académicas
 - Vida Universitaria
 
@@ -36,3 +37,7 @@ El objetivo de este sitio es documentar mi proceso de aprendizaje, mostrar mis h
 <p align="center">
   Hecho con dedicación y aprendizaje constante 🚀
 </p>
+
+
+
+✨ *Visita mi portafolio en vivo: [portafolio-personal-wa0u.onrender.com](https://portafolio-personal-wa0u.onrender.com/)*
